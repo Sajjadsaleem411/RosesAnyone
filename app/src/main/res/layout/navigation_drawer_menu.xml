@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:text="@string/weddingFlowers"
+                  android:padding="10dp"
+                  android:layout_alignParentStart="true"
+                  android:id="@+id/tvDrawerWeddingFlower"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/occassionsFlowers"
+                  android:layout_marginStart="20dp"
+                  android:padding="10dp"
+                  android:layout_alignParentStart="true"
+                  android:id="@+id/tvDrawerOccasionsFlower"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+
+    <!--    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/whatsNew"
+                  android:layout_marginStart="20dp"
+                  android:layout_alignParentStart="true"
+                  android:padding="10dp"
+                  android:id="@+id/tvDrawerWhatsNew"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>-->
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/flowersForWomen"
+                  android:layout_marginStart="20dp"
+                  android:layout_alignParentStart="true"
+                  android:padding="10dp"
+                  android:id="@+id/tvDrawerwomenFlower"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/weddingAniversary"
+                  android:layout_marginStart="20dp"
+                  android:layout_alignParentStart="true"
+                  android:padding="10dp"
+                  android:id="@+id/tvDrawerAnniversary"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/birthdayFlowerAndGift"
+                  android:layout_marginStart="20dp"
+                  android:padding="10dp"
+                  android:id="@+id/tvDrawerGift"
+                  android:layout_alignParentStart="true"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/weeklyWinner"
+                  android:layout_marginStart="20dp"
+                  android:layout_alignParentStart="true"
+                  android:padding="10dp"
+                  android:id="@+id/tvDrawerWinner"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/action_settings"
+                  android:layout_marginStart="20dp"
+                  android:padding="10dp"
+                  android:id="@+id/tvDrawerSetting"
+                  android:layout_alignParentStart="true"
+                  android:textColor="@android:color/black"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/lightGrey"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/about"
+              android:textColor="@color/mediumGrey"
+              android:layout_above="@+id/tvAppName"
+              android:layout_centerHorizontal="true"
+              android:textStyle="bold"
+              android:fontFamily="@font/poppins_regular"/>
+
+    <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular"/>
+</RelativeLayout>

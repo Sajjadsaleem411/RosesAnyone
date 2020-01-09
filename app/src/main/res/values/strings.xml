@@ -1,3 +1,91 @@
 <resources>
-    <string name="app_name">RosesAnyone</string>
+    <string name="app_name">Roses Anyone</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="selectLanguage">Select a language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="enterEmailAddress">Enter your email address</string>
+    <string name="forgetYourPassword">Forget your password?</string>
+    <string name="password">Password</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="dontHaveAccount">Don’t have an account?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="emailAddress">Email address</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="myCart">My Cart</string>
+    <string name="offers">Offers</string>
+    <string name="more">More</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu">Menu</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="weddingFlowers">Wedding Flowers</string>
+    <string name="occassionsFlowers">Occassions Flowers</string>
+    <string name="whatsNew">What\'s New?</string>
+    <string name="flowersForWomen">Flowers For Women</string>
+    <string name="weddingAniversary">Wedding Anniversary</string>
+    <string name="birthdayFlowerAndGift"><![CDATA[Birthday Flower & Gift]]></string>
+    <string name="weeklyWinner">weekly Winners</string>
+    <string name="chooseTheFlower">Choose the flowers</string>
+    <string name="searchYourFlower">Search your flower</string>
+    <string name="search">Search</string>
+    <string name="searchIn">Search in</string>
+    <string name="corporate">Corporate</string>
+    <string name="corporatesFlower">Corporate Flowers</string>
+    <string name="conferenceFlower">Conference Flowers</string>
+    <string name="conference">Conference</string>
+    <string name="conferenceDesc">A beautiful fresh flower for you. Enjoy the fragrance and new style from Roses Anyone - your personal flowers App.  This flower is especially designed for celebration purposes and can be gifted to your loved ones with a nice envelop having  message from you</string>
+   <string name="flowerDesigner">Brought to you by Haneen Rashid Al-Bulooshi - yours Roses Anyone flowers\' designer</string>
+    <string name="placeThisOrder">Place this order</string>
+    <string name="qty">Qty</string>
+    <string name="about">About</string>
+    <string name="addToCart">Add to cart</string>
+    <string name="thankYou">Thank You</string>
+    <string name="forYourOrder">For your order</string>
+    <string name="estimateDelivery">Estimated delivery</string>
+    <string name="continueShopping">Continue Shopping</string>
+    <string name="checkout">Checkout</string>
+    <string name="address">Address</string>
+    <string name="phoneNo">Phone Number</string>
+    <string name="city">City</string>
+    <string name="states">States</string>
+    <string name="pinCode">Pin Code</string>
+    <string name="country">Country</string>
+    <string name="done">Done</string>
+    <string name="flowers">Flowers</string>
+    <string name="searchByCity">Search by City</string>
+    <string name="muscat">Muscat</string>
+    <string name="nizwa">Nizwa</string>
+    <string name="sur">Sur</string>
+    <string name="salalah">Salalah</string>
+    <string-array name="cityArray">
+        <item>Karachi</item>
+        <item>Lahore</item>
+    </string-array>
+    <string-array name="statesArray">
+        <item>Sindh</item>
+        <item>Belochistan</item>
+    </string-array>
+
+    <string-array name="CountryArray">
+        <item>Pakistan</item>
+        <item>Saudi Arab</item>
+    </string-array>
+
+    <string name="internetError">Please check your internet!</string>
+
+    <string name="emailInvalid">Email is not correct!</string>
+    <string name="emailAlreadyExist">This email already use in another account</string>
+    <string name="passwordInvalid">Password must be greater to 5 digit</string>
+    <string name="passwordOrEmailInvalid">Your email or password is not correct</string>
+    <string name="dataFieldsEmpty">Kindly provide the data first</string>
 </resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.flower.FlowerActivity">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarFlower"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:id="@+id/ivAddressBack"
+                    style="@style/small_icons"
+                    android:src="@drawable/ic_back_press"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+            <TextView
+                    android:id="@+id/tvFlowerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/checkout"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarFlower"
+            android:padding="20dp"
+            android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mediumGrey"
+                    android:text="@string/firstName"/>
+
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mediumGrey"
+                    android:text="@string/lastName"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <EditText
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:textCursorDrawable="@null"
+                    android:background="@android:color/transparent"/>
+
+            <EditText
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:textCursorDrawable="@null"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/mediumGrey"/>
+
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mediumGrey"
+                android:text="@string/address"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:inputType="text"
+                android:background="@android:color/transparent"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/mediumGrey"/>
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mediumGrey"
+                android:text="@string/phoneNo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:inputType="number"
+                android:background="@android:color/transparent"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/mediumGrey"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="20dp">
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mediumGrey"
+                    android:text="@string/city"/>
+
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mediumGrey"
+                    android:text="@string/states"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    style="@style/MyCustomTabTextAppearance"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/cityArray"/>
+
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/statesArray"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/mediumGrey"/>
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="20dp">
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mediumGrey"
+                    android:text="@string/country"/>
+
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mediumGrey"
+                    android:text="@string/pinCode"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:entries="@array/CountryArray"/>
+
+            <EditText
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"/>
+            />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/mediumGrey"/>
+        <Button
+                android:id="@+id/btnAddressDone" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_primary"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</RelativeLayout>

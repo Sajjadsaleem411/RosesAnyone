@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        android:background="@drawable/bg"
+        android:padding="20dp">
+
+    <ImageView
+            android:id="@+id/ivRegisterBack"
+            style="@style/small_icons"
+            android:src="@drawable/ic_back_press"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+    <RelativeLayout
+            android:id="@+id/rlLoginFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/rlRegisterLastName">
+        <ImageView style="@style/small_icons"
+                   android:src="@drawable/ic_user"
+                   android:id="@+id/ivLoginFirstName"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"/>
+        <EditText
+                android:id="@+id/etLoginFirstName"
+                android:layout_toEndOf="@id/ivLoginFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="text"
+                android:hint="@string/firstName"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_below="@id/etLoginFirstName"
+              android:background="@android:color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/rlRegisterLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/rlRegisterEmail">
+        <ImageView style="@style/small_icons"
+                   android:src="@drawable/ic_user"
+                   android:id="@+id/ivLoginLastName"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"/>
+        <EditText
+                android:id="@+id/etLoginLastName"
+                android:layout_toEndOf="@id/ivLoginLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="text"
+                android:hint="@string/lastName"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_below="@id/etLoginLastName"
+              android:background="@android:color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/rlRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true">
+        <ImageView style="@style/small_icons"
+                   android:src="@drawable/ic_email"
+                   android:id="@+id/ivLoginEmail"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"/>
+        <EditText
+                android:id="@+id/etLoginEmail"
+                android:layout_toEndOf="@id/ivLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="textEmailAddress"
+                android:hint="@string/emailAddress"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_below="@id/etLoginEmail"
+              android:background="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rlRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlRegisterEmail">
+
+        <ImageView style="@style/small_icons"
+                   android:src="@drawable/ic_password"
+                   android:id="@+id/ivLoginPassword"
+                   android:layout_alignParentStart="true"
+                   android:layout_centerVertical="true"/>
+        <EditText
+                android:id="@+id/etLoginPassword"
+                android:layout_toEndOf="@id/ivLoginPassword"
+                android:layout_toStartOf="@+id/ivLoginHidePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:inputType="textPassword"
+                android:hint="@string/password"/>
+        <ImageView style="@style/small_icons"
+                   android:src="@drawable/ic_hide_pass"
+                   android:id="@+id/ivLoginHidePassword"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentEnd="true"/>
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_below="@id/etLoginPassword"
+              android:background="@android:color/white"/>
+    </RelativeLayout>
+
+
+
+    <Button
+            android:id="@+id/btnRegister" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/btn_primary_dark"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

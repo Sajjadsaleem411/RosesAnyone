@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:gravity="bottom">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:contentDescription="@string/nav_header_desc"
+            android:id="@+id/navProfileImage"/>
+
+    <TextView
+            android:id="@+id/navProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/nav_header_title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_above="@+id/navEditProfile"
+            android:layout_toEndOf="@+id/navProfileImage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <LinearLayout
+            android:id="@+id/navEditProfile"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/navProfileImage"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:padding="5dp">
+
+        <ImageView style="@style/nav_icon"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_edit"
+                   android:layout_alignParentStart="true"/>
+        <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/editProfile"/>
+    </LinearLayout>
+
+</RelativeLayout>

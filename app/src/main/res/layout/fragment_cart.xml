@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCart"
+            android:layout_above="@+id/llCartBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_animation_from_bottom"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+            android:id="@+id/llCartBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_primary"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAllCaps="true"
+                  android:textStyle="bold"
+                  android:textColor="@color/white"
+                  android:fontFamily="@font/poppins_regular"
+                  android:text="@string/placeThisOrder"/>
+        <ImageView style="@style/small_icons"
+                   android:src="@drawable/vertical_dots"/>
+        <TextView
+                android:id="@+id/tvCartTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15.00"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"/>
+    </LinearLayout>
+
+</RelativeLayout>

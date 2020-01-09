@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:background="@color/lightGrey"
+              tools:context=".fragment.home.HomeFragment">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="10dp">
+        <ImageView
+                style="@style/small_icons"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:id="@+id/ivSearch"/>
+        <EditText
+                android:id="@+id/etHomeSearch"
+                android:layout_toEndOf="@+id/ivSearch"
+                android:layout_width="match_parent"
+                android:paddingStart="10dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:hint="@string/searchYourFlower"
+                android:layout_toStartOf="@id/flList"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:background="@android:color/transparent"/>
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/flList"
+                     android:layout_marginEnd="10dp"
+                     android:layout_centerVertical="true"
+                     android:layout_toStartOf="@+id/btnHomeSearch">
+
+            <!--  <Spinner
+                      android:layout_width="20dp"
+                      android:layout_height="match_parent"
+                      android:background="@color/white"
+                      android:spinnerMode="dropdown"
+                      android:dropDownVerticalOffset="-15dp"
+                      android:entries="@array/statesArray"/>-->
+            <ImageView
+                    style="@style/small_icons"
+                    android:src="@drawable/ic_list"
+                    android:id="@+id/ivList"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/btnHomeSearch"/>
+        </FrameLayout>
+
+        <Button
+                android:id="@+id/btnHomeSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_primary_oneside"
+                android:text="@string/search"
+                android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/rvHomeOffers"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"/>
+    <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tvEconomyCar"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/chooseTheFlower"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/tvEconomyCar"
+                android:id="@+id/rvHomeFlower"
+                android:layoutAnimation="@anim/layout_animation_slide_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+    </RelativeLayout>
+</LinearLayout>

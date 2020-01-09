@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LaunchActivity"
+        android:background="@drawable/bg_with_bar">
+
+    <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="@string/selectLanguage"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:paddingStart="70dp"
+                  android:paddingEnd="70dp">
+
+        <Button android:id="@+id/btnLanguageEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_primary_dark"
+                android:text="@string/english"
+                android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btnLanguageArabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/white_border"
+                android:text="@string/arabic"/>
+    </LinearLayout>
+    <ImageButton
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_roses_anyone_2x"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"/>
+</RelativeLayout>
